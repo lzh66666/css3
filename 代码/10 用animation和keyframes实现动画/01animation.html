@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#hd{
+				width: 300px;
+				height: 150px;
+				background: dodgerblue;
+				/*给hd加一个规则运动*/
+				/*参数:要绑定的运动名称 运动的持续时间 运动曲线 延迟时间  重复次数  是否轮流反向播放动画*/
+				/*animation: run 3s linear 0.5s 3;*/
+				/*3代表几次执行，无限次用infinite*/
+				animation: run 3s linear 0.5s infinite;
+			}
+			
+			/*定义运动规则*/
+			/*@keyframes name{
+				from{};
+				to{}
+			}*/
+			/*@keyframes run{
+				from{
+					width: 300px;
+					height: 150px;
+				}
+				to{
+					width: 900px;
+					height: 500px;
+				}
+			}*/
+			
+			@keyframes run{
+				0%{
+					width: 300px;
+					/*height: 150px;*/
+				}
+				50%{
+					width: 400px;
+					/*height: 500px;*/
+				}
+				100%{
+					width: 900px;
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="hd">
+			
+		</div>
+	</body>
+</html>

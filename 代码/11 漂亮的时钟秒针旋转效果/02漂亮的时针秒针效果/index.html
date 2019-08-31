@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			#hd{
+				width: 500px;
+				height: 500px;
+				border: 1px solid yellow;
+				margin: 0 auto;
+				background: url(biaopan.jpg) no-repeat;
+				background-size: 100% 100%;
+			}
+			#hd img{
+				width: 10px;
+				height: 250px;
+				position: relative;
+				left: 239px;
+				top: 188px;
+				transform-origin: 85% 22%;
+				animation: run 60s linear infinite;
+			}
+			@keyframes run{
+				from{
+					transform: rotate(0deg);
+				}
+				to{
+					transform: rotate(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="hd">
+			<img src="miaozhen.png" alt="" />
+		</div>
+	</body>
+</html>

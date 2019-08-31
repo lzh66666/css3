@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css" media="screen">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		/* flex的项目不脱离文档流 */
+		#hd{
+			border: 4px solid orangered;
+			width: 80%;
+			margin: 0 auto;
+			display: flex;
+			
+		}
+		#hd >div{
+            width: 180px;
+            height: 200px;
+            background: dodgerblue;
+            border: 1px solid purple;
+		}
+	</style>
+</head>
+<body>
+	<!-- 总宽度如果超过父级元素的宽度，宽度将自动均分 -->
+	<div id="hd">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</body>
+</html>
